@@ -1,0 +1,505 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------------------------------页面顶部导航页的样式------------------------------------*/
+#navi #navi_content{
+	width:1200px;
+	height: 60px;
+}
+#navi #navi_content #logo{
+	width:190px;
+	height: 60px;
+	background: url(../images/nubia-logo.png) no-repeat;
+	float: left;
+}
+#navi #navi_content #navi_right{
+	width:740px;
+	height: 60px;
+	float: right;
+}
+#navi #navi_content #navi_right #navi_list{
+	width:550px;
+	height: 60px;
+	float: left;
+	line-height: 60px;
+}
+#navi #navi_content #navi_right #navi_list li{
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	list-style: none;
+	display: inline;
+	margin: 19px;
+}
+#navi #navi_content #navi_right #navi_list li a{
+	text-decoration: none;
+	color: #fff;
+}
+#navi #navi_content #navi_right #navi_list li a:hover{
+	color: #970002;
+}
+#navi #navi_content #navi_right #navi_login{
+	width:150px;
+	height: 60px;
+	float: right;
+	line-height: 60px;
+}
+#navi #navi_content #navi_right #navi_login li{
+	list-style: none;
+	font-size: 16px;
+	color: #eee;
+	float: right;
+	margin: 0 10px 0 10px ; 
+}
+#navi #navi_content #navi_right #navi_login li:nth-child(1){
+	width:30px;
+	height: 30px;
+	background: url(../images/nubia-syb-all.png) no-repeat 0 0;
+	float: left;
+	margin: 15px 0 0 15px;
+}
+#navi #navi_content #navi_right #navi_login li a{
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+}
+#navi #navi_content #navi_right #navi_login li a:hover{
+	color: #970002;
+}
+
+
+
+/*------------------------------------导航下面的手机展示图和大的轮播图区域的样式------------------------------------*/
+
+/*导航下面的手机展示图样式*/
+#slideShow #phoneShow{
+	width:100%;
+	height: 121px;
+	background-color: #FFFFFF;
+	float: left;
+	position: relative;
+	z-index: 99;
+}
+#slideShow #phoneShow ul{
+	width:1200px;
+	height: 121px;
+	box-sizing: border-box;
+	padding: 0 75px;
+	margin: 0 auto;
+	text-align: center;
+}
+#slideShow #phoneShow ul li{
+	width:135px;
+	height: 121px;
+	list-style:none;
+	margin: 0 7px 0 7px;
+	display: block;
+	float: left;
+}
+#slideShow #phoneShow ul li:hover{
+	border-bottom: 2px solid red;
+}
+#slideShow #phoneShow ul li img{
+	height:90px;
+	margin: 10px auto;
+	margin-bottom: -15px;
+}
+#slideShow #phoneShow ul li span{
+	text-align: center;
+	font-size:14px;
+	color:#bbb;
+	display: inline-block;
+}
+
+/*大的轮播图区域*/
+#slideShow #pictureShow{
+	width: 100%;
+	height: 600px;
+	background: url(../images/banner.jpg) no-repeat 50% 56% ;
+	background-size: auto 600px;
+	position: relative;
+}
+#slideShow #pictureShow #shift{
+	width:150px;
+	height: 20px;			
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	margin-left: -75px;
+}
+#slideShow #pictureShow #shift li{
+	width: 8px;	
+	height: 8px;
+	background-color: aliceblue;
+	border-radius: 50%;
+	border: 2px solid aliceblue;
+	list-style: none;
+	margin: 0 5px 6px 5px;
+	display:inline-block;
+	transition: all 1s;
+}
+#slideShow #pictureShow #shift li:hover{
+	border: 2px solid red;
+}
+
+/*------------------------------------轮播图下面的三个板块的视频展示区域------------------------------------*/
+#video ul{
+	width:1200px;
+	height: 250px;
+	margin-top: 10px;
+}
+#video ul li{
+	width:396px;
+	height: 250px;
+	list-style: none;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	background-color: black;
+}
+#video ul li:nth-child(2){
+	margin: 0 6px;
+}
+#video ul li>img{
+	height: 100%;
+	margin: 0 -100%;
+}
+#video ul li .video_info{
+	width:396px;
+	height:175px;
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+}
+#video ul li .video_info img{
+	width:60px;
+	height: 60px;
+	margin-top: 20px;
+	margin: 10px 0 6px 0;
+}
+#video ul li .video_info h3{
+	font-size:16px;
+	color: white;
+	font-weight: 500;
+}
+#video ul li .video_info p{
+	font-size:14px;
+	color: white;
+	margin-top: 6px;
+}
+#video ul li:hover .video_info{
+	opacity: 1;
+}
+#video ul li:hover .video{
+	opacity:0.5;
+}
+#video ul li:hover .video_info>img{
+	animation: mySport 2s 0.5s ease-in-out infinite;
+}
+@keyframes mySport{
+	20%{transform: scale(0.8);}
+	40%{transform: scale(1.2);}
+	60%{transform: scale(0.9);}
+	80%{transform: scale(1);}
+	100%{transform: scale(1);}
+}
+
+
+/*------------------------------------最新产品区域------------------------------------*/
+#newProduct dl dt h2{
+	font-size: 35px;
+	font-weight: normal;
+	color: #333;
+	margin-bottom: 6px;
+}
+#newProduct dl dt p{
+	font-size: 14px;
+	color: #e8340e;
+	font-weight: 600;
+}
+#newProduct dl dd{
+	width:1200px;
+	height: 1200px;
+	margin-top:30px;
+}
+#newProduct dl dd ul li{
+	background-color: white;
+	list-style: none;
+	float: left;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+}
+#newProduct dl dd ul li>.phone_des{
+	width:200px;
+	height: 200px;
+	position:absolute;
+}
+#newProduct dl dd ul li>.phone_des>h5{
+	font-size: 20px;
+	font-weight: normal;
+	color: #000;
+	margin-top: 55px;
+}
+#newProduct dl dd ul li>.phone_des>p{
+	font-size:15px;
+	margin-bottom: 10px;
+	color: #555555;
+	margin-top: 2px;
+}
+#newProduct dl dd ul li>.phone_des>.round_rectangle{
+	width:108px;
+	height: 32px;
+	display: inline-block;
+	border-radius: 8px;
+	border: 1px solid #bbb;
+	font-size: 14px;
+	line-height: 30px;
+	color: #000;
+	letter-spacing: 6px;
+}
+#newProduct dl dd ul li>.phone_des>.round_rectangle:hover{
+	color: white;
+	background-color: #333;
+	cursor: pointer;
+}
+#newProduct dl dd ul li:nth-child(1){
+	width:1200px;
+	height: 395px;
+	margin-bottom: 10px;
+}
+#newProduct dl dd ul li:nth-child(1)>img{
+	width: 100%;
+	margin-top: 60px;
+	margin-left:-215px;	
+	transition: all 1s;
+}
+#newProduct dl dd ul li:nth-child(1)>img:hover{
+	margin-left: 0px;
+	transition: all 1s;
+}
+#newProduct dl dd ul li:nth-child(1)>.phone_des{
+	top: 50%;
+	margin-top: -100px;
+	right: 175px;
+}
+
+#newProduct dl dd ul li:nth-child(2){
+	width:395px;
+	height: 795px;
+	margin-right: 10px;
+}
+#newProduct dl dd ul li:nth-child(2)>img{
+	width: 100%;
+	transition: all 1s;
+}
+#newProduct dl dd ul li:nth-child(2)>img:hover{
+	transform: scale(1.2);
+}
+#newProduct dl dd ul li:nth-child(2)>.phone_des{
+	left: 50%;
+	margin-left: -100px;
+}
+#newProduct dl dd ul li:nth-child(3){
+	width:795px;
+	height: 390px;
+	margin-bottom: 10px;
+}
+#newProduct dl dd ul li:nth-child(3)>img{
+	width: 100%;
+	margin-top: 0;
+	margin-left:215px;	
+	transition: all 1s;
+}
+#newProduct dl dd ul li:nth-child(3)>img:hover{
+	margin-left: 0px;
+	transition: all 1s;
+}
+#newProduct dl dd ul li:nth-child(3)>.phone_des{
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -30px;
+}
+#newProduct dl dd ul li:nth-child(4){
+	width:390px;
+	height: 395px;
+	margin-right: 10px;
+}
+#newProduct dl dd ul li:nth-child(4)>img{
+	width: 100%;
+	margin-top: -10px;
+	transition: all 1s;
+}
+#newProduct dl dd ul li:nth-child(4)>img:hover{
+	transform: scale(1.2);
+}
+#newProduct dl dd ul li:nth-child(4)>.phone_des{
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -55px;
+}
+#newProduct dl dd ul li:nth-child(5){
+	width:395px;
+	height: 395px;
+}
+#newProduct dl dd ul li:nth-child(5)>img{
+	width: 100%;
+	margin-top: -10px;
+	transition: all 1s;
+}
+#newProduct dl dd ul li:nth-child(5)>img:hover{
+	transform: scale(1.2);
+}
+#newProduct dl dd ul li:nth-child(5)>.phone_des{
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -55px;
+}
+
+
+/*------------------------------------精品配件区------------------------------------*/
+#part dl dt h2{
+	font-size: 35px;
+	font-weight: normal;
+	color: #333;
+	margin-bottom: 6px;
+}
+#part dl dt p{
+	font-size: 14px;
+	color: #e8340e;
+	font-weight: 600;
+}
+#part dl dd>ul{
+	width:1200px;
+	height: 300px;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+#part dl dd>ul>li{
+	width:295px;
+	height: 300px;
+	background-color: white;
+	list-style: none;
+	float: left;
+	overflow: hidden;
+}
+#part dl dd>ul>li img{
+	width:100%;
+	transition: all 0.5s ease;
+}
+#part dl dd>ul>li img:hover{
+	transform: scale(1.2);
+}
+#part dl dd>ul>li p{
+	font-size:14px;
+	color: #999999;
+	position: relative;
+}
+
+
+/*------------------------------------底部友情链接区域------------------------------------*/
+#bottomLink #linkContent{
+	width:1100px;
+	height:300px;
+	margin: 56px 0 0 100px;
+	text-align: left;
+}
+#bottomLink #linkContent>dt>img{
+	width:14px;
+}
+#bottomLink #linkContent>dt>span{
+	color:#999;
+	font-size: 14px;
+}
+#bottomLink #linkContent>ul{
+	width:200px;
+	height: 200px;
+	float: left;
+}
+#bottomLink #linkContent>ul>h5{
+	height: 30px;
+	line-height: 30px;
+	font-size:16px;
+	color: #000;
+}
+#bottomLink #linkContent>ul li{
+	height: 25px;
+	line-height: 20px;
+	list-style:none;
+}
+#bottomLink #linkContent>ul>li>a{
+	text-decoration:none;
+	font-size: 12px;
+	color: #999;
+}
+#bottomLink #linkContent>ul>li>a:hover{
+	color:red;
+}
+#bottomLink #linkContent #about_us{
+	width:650px;
+	height: 36px;
+	font-size: 10px;
+	color: #999;
+	line-height: 36px;
+	float: left;
+}
+#bottomLink #linkContent #about_us>li{
+	padding: 10px;
+	display:inline;
+}
+#bottomLink #linkContent #about_us>li:first-child{
+	padding-left: 0;
+}
+#bottomLink #linkContent #about_us>li>a:hover{
+	color: black;
+}
+#bottomLink #linkContent #icon{
+	width:400px;
+	height: 36px;
+	float: left;
+	box-sizing: border-box;
+	padding-top: 3px;
+	margin-left: 50px;
+}
+#bottomLink #linkContent #icon>li{
+	width: 30px;
+	height: 30px;
+	background-color: yellow;
+	float: left;
+	margin-right: 10px;
+}
+#bottomLink #linkContent #icon>li:nth-child(1){
+	background:url(../images/nubia-syb-all.png) no-repeat -246px 0;
+}
+#bottomLink #linkContent #icon>li:nth-child(2){
+	background:url(../images/nubia-syb-all.png) no-repeat -186px 0;
+}
+#bottomLink #linkContent #icon>li:nth-child(3){
+	background:url(../images/nubia-syb-all.png) no-repeat -126px 0;
+}
+#bottomLink #linkContent #icon>li:nth-child(4){
+	background:url(../images/nubia-syb-all.png) no-repeat -156px 0;
+}
+#bottomLink #linkContent #icon>li>a{
+	width: 30px;
+	height: 30px;
+	display: block;
+}
+#bottomLink #linkContent #icon>span{
+	font-size:20px;
+	color: #999999;
+}
+#bottomLink #linkContent>p{
+	line-height: 30px;
+	float: left;
+	font-size: 12px;
+	color: #999999;
+}
+#bottomLink #linkContent>p>a{
+	text-decoration:none;
+	color: #999999;
+}
+#bottomLink #linkContent>p>img{
+	width:10px;
+}
